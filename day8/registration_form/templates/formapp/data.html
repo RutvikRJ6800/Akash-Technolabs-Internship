@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Data</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="{% static 'formapp/fonts/material-icon/css/material-design-iconic-font.min.css' %}">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="{% static 'formapp/css/style.css' %}">
+</head>
+<body>
+
+    <div class="main">
+
+        <h1>Data</h1>
+        <div class="container"> 
+                           
+                    
+                    <h2 class="form-title">Your Data</h2>
+
+                    <div class="form-textbox">
+                        First name: {{ firstname }}
+                    </div>
+
+                    <div class="form-textbox">
+                        Last name: {{ lastname }}
+                    </div>
+
+                    <div class="form-textbox">
+                        Gender: {{ gender }}
+                    </div>
+
+                    <div class="form-textbox">
+                        Email: {{ email }}
+                    </div>
+
+                    <div class="form-textbox">
+                        Mobile: {{ mobile }}
+                    </div>
+
+                    <div class="form-textbox">
+                        <p>Register <a href="{% url 'register' %} ">here</a></p>
+                    </div>
+                    <div class="form-textbox"><br><br></div>>
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="{% static 'formapp/vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'formapp/js/main.js' %}"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
